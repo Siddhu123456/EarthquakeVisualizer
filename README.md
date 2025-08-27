@@ -1,12 +1,67 @@
-# React + Vite
+# Earthquake Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite project to visualize earthquakes on a map.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## Expanding the ESLint configuration
+This project allows users to view recent earthquakes with interactive maps and filters.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tools & Technologies
+
+- React
+- Vite
+- Leaflet (for maps)
+- JavaScript, HTML, CSS
+
+---
+
+## Development Process
+
+1. **Project Setup**
+   - Created a new Vite + React project.
+   - Installed necessary dependencies (`leaflet`, etc.)
+
+2. **UI Design**
+   - Designed responsive buttons and map view.
+   - Used CSS with media queries for mobile, tablet, and desktop.
+
+3. **Features Implemented**
+   - Interactive earthquake map with markers.
+   - Reset view button for map navigation.
+   - Responsive design for multiple devices.
+
+4. **Testing & Debugging**
+   - Tested locally with `npm run dev -- --host`.
+   - Adjusted Vite config to expose server for mobile/StackBlitz.
+
+5. **Deployment**
+   - Deployed on **Vercel** for a public link.
+
+---
+
+## How to Run Locally
+
+```bash
+git clone https://github.com/Siddhu123456/EarthquakeVisualizer.git
+cd EarthquakeVisualizer
+npm install
+npm run dev -- --host
+
+
+---
+
+6. **Live Demo** ← This is where your links go.  
+
+```markdown
+## Live Demo
+
+- **Vercel:** https://earthquake-visualizer-zeta.vercel.app/
+
+
+## Author
+
+Siddhu123456
