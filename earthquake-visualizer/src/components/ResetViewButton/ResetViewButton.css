@@ -1,0 +1,150 @@
+.reset {
+  position: absolute !important;
+  bottom: 40px !important; /* moved upward */
+  right: 15px !important;
+  z-index: 1000 !important; /* Lower than dropdown z-index */
+  padding: 12px 18px !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+  backdrop-filter: blur(10px) !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: #2c3e50 !important;
+  transition: all 0.3s ease !important;
+  user-select: none !important;
+  white-space: nowrap !important;
+  pointer-events: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.reset:hover {
+  background: white !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2) !important;
+  color: #34495e !important;
+}
+
+.reset:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.reset:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3) !important;
+}
+
+/* Icon addition for better UX */
+.reset::before {
+  content: '🌍 ';
+  margin-right: 5px;
+}
+
+/* Desktop Styles (1200px and above) */
+@media (min-width: 1200px) {
+  .reset {
+    bottom: 50px !important; /* moved upward */
+    right: 20px !important;
+    padding: 14px 22px !important;
+    font-size: 15px !important;
+    border-radius: 10px !important;
+  }
+  
+  .reset::before {
+    margin-right: 6px;
+  }
+}
+
+/* Large Tablet Styles (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .reset {
+    bottom: 45px !important; /* moved upward */
+    right: 18px !important;
+    padding: 13px 20px !important;
+    font-size: 14px !important;
+  }
+  
+  .reset::before {
+    margin-right: 5px;
+  }
+}
+
+/* Tablet Styles (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .reset {
+    bottom: 40px !important; /* moved upward */
+    right: 16px !important;
+    padding: 11px 16px !important;
+    font-size: 13px !important;
+  }
+  
+  .reset::before {
+    margin-right: 4px;
+  }
+}
+
+/* Mobile Styles (below 768px) */
+@media (max-width: 767px) {
+  .reset {
+    bottom: 35px !important; /* moved upward */
+    right: 12px !important;
+    padding: 10px 14px !important;
+    font-size: 12px !important;
+    border-radius: 6px !important;
+    z-index: 1000 !important; /* Ensure it stays below dropdown */
+  }
+  
+  .reset::before {
+    content: '🌍';
+    margin-right: 3px;
+    font-size: 14px;
+  }
+  
+  .reset:hover {
+    transform: translateY(-1px) !important;
+  }
+}
+
+/* Small Mobile Styles (below 480px) */
+@media (max-width: 479px) {
+  .reset {
+    bottom: 30px !important; /* moved upward */
+    right: 10px !important;
+    padding: 8px 12px !important;
+    font-size: 11px !important;
+    border-radius: 6px !important;
+    z-index: 1000 !important; /* Ensure it stays below dropdown */
+  }
+  
+  .reset::before {
+    content: '🌍';
+    margin-right: 2px;
+    font-size: 12px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .reset {
+    padding: 12px 16px !important;
+    font-size: 13px !important;
+    min-height: 44px !important;
+    min-width: 44px !important;
+    z-index: 1000 !important; /* Ensure it stays below dropdown on touch devices */
+  }
+  
+  .reset:hover {
+    transform: none !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+  }
+  
+  .reset:active {
+    background: rgba(255, 255, 255, 0.8) !important;
+    transform: scale(0.95) !important;
+  }
+}

@@ -1,0 +1,48 @@
+/* HeaderControls Component Styles */
+.header-controls {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* Desktop Styles (1200px and above) */
+@media (min-width: 1200px) {
+  .header-controls {
+    gap: 20px;
+  }
+}
+
+/* Large Tablet Styles (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header-controls {
+    gap: 18px;
+  }
+}
+
+/* Tablet Styles (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-controls {
+    gap: 14px;
+    flex-shrink: 0;
+  }
+}
+
+/* Mobile Styles (below 768px) */
+@media (max-width: 767px) {
+  .header-controls {
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Small Mobile Styles (below 480px) */
+@media (max-width: 479px) {
+  .header-controls {
+    gap: 8px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}

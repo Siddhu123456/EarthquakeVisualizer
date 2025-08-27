@@ -1,0 +1,111 @@
+/* LogoSection Component Styles */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  font-size: 2rem;
+  animation: rotate 20s linear infinite;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Desktop Styles (1200px and above) */
+@media (min-width: 1200px) {
+  .logo-section {
+    gap: 16px;
+  }
+  
+  .logo-icon {
+    font-size: 2.2rem;
+  }
+  
+  .app-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* Large Tablet Styles (992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .logo-section {
+    gap: 14px;
+  }
+  
+  .logo-icon {
+    font-size: 2.1rem;
+  }
+  
+  .app-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Tablet Styles (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo-section {
+    gap: 12px;
+  }
+  
+  .logo-icon {
+    font-size: 1.8rem;
+  }
+  
+  .app-title {
+    font-size: 1.4rem;
+  }
+}
+
+/* Mobile Styles (below 768px) */
+@media (max-width: 767px) {
+  .logo-section {
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .logo-icon {
+    font-size: 1.6rem;
+  }
+  
+  .app-title {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+/* Small Mobile Styles (below 480px) */
+@media (max-width: 479px) {
+  .logo-section {
+    gap: 8px;
+  }
+  
+  .logo-icon {
+    font-size: 1.4rem;
+  }
+  
+  .app-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+}
