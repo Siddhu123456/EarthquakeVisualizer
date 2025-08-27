@@ -1,12 +1,12 @@
 # Earthquake Visualizer
 
-A React + Vite project to visualize earthquakes on a map.
+A React + Vite project to visualize earthquakes on a map with state management using Redux.
 
 ---
 
 ## Project Overview
 
-This project allows users to view recent earthquakes with interactive maps and filters.
+This project allows users to view recent earthquakes with interactive maps and filters. Redux is used to manage application state such as earthquake data and UI state.
 
 ---
 
@@ -14,6 +14,7 @@ This project allows users to view recent earthquakes with interactive maps and f
 
 - React
 - Vite
+- Redux & React-Redux (for state management)
 - Leaflet (for maps)
 - JavaScript, HTML, CSS
 
@@ -23,7 +24,7 @@ This project allows users to view recent earthquakes with interactive maps and f
 
 1. **Project Setup**
    - Created a new Vite + React project.
-   - Installed necessary dependencies (`leaflet`, etc.)
+   - Installed necessary dependencies (`leaflet`, `redux`, `react-redux`, etc.)
 
 2. **UI Design**
    - Designed responsive buttons and map view.
@@ -33,6 +34,7 @@ This project allows users to view recent earthquakes with interactive maps and f
    - Interactive earthquake map with markers.
    - Reset view button for map navigation.
    - Responsive design for multiple devices.
+   - State management with Redux for consistent data handling.
 
 4. **Testing & Debugging**
    - Tested locally with `npm run dev -- --host`.
@@ -50,6 +52,7 @@ git clone https://github.com/Siddhu123456/EarthquakeVisualizer.git
 cd EarthquakeVisualizer
 npm install
 npm run dev -- --host
+
 
 
 ---
