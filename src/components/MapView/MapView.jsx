@@ -136,6 +136,7 @@ const MapView = () => {
                 maxBoundsViscosity={1.0}
                 worldCopyJump={false}
                 className="map-container"
+                zoomControl={false}
             >
                 <TileLayer
                     url={mapConfigs[activeMaptype].url}
